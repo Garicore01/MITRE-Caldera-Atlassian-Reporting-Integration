@@ -1,8 +1,0 @@
-https://caldera.readthedocs.io/en/latest/index.html 
-
-https://www.incibe.es/sites/default/files/2024-09/INCIBE-CERT_ESTUDIO_CALDERA_OT_2024_v1.0.pdf
-https://natasec.com/mitre-caldera-primeros-pasos/
-https://www.linkedin.com/pulse/guía-básica-de-adversary-emulation-con-caldera-mitre-qthrf/
-https://medium.com/@mitrecaldera/bienvenidxs-al-blog-oficial-de-mitre-caldera-9e25b01b9493
-
-https://www.ibm.com/es-es/topics/mitre-attack

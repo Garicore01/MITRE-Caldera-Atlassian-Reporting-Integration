@@ -1,9 +1,0 @@
-Ciberseguridad proactiva: Automatización de pruebas ofensivas con MITRE Caldera y gestión de incidentes en Jira
-Ciberseguridad proactiva: Automatización de pruebas ofensivas con MITRE Caldera y su gestión en Jira
-Defensa proactiva: Detección automatizada de amenazas con MITRE Caldera e integración con Jira
-
-Detección automatizada de amenazas con MITRE Caldera e integración con Jira ++
-Automatización de pruebas ofensivas con MITRE Caldera e integración con Jira
-
-Diseño de servicio para la detección automatizada de amenazas con MITRE Caldera e integración con Jira
-
