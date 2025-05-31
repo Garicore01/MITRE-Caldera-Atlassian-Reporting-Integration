@@ -12,27 +12,67 @@ Description:
 import matplotlib.pyplot as plt
 import base64
 from io import BytesIO
+import logging
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('statistics.log'),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger('Statistics')
 
 class Statistics:
-    def __init__(self, report_data):
+    def __init__(self, report_data=None):
+        logger.info("Initializing Statistics class")
+        self.data = report_data if report_data is not None else ""
+        logger.info(f"Report data initialized: {'Data present' if self.data else 'No data'}")
+    
+    # PRE: <report_data> is a dictionary that contains the JSON report data.
+    # POST: Sets the data attribute to the given value.
+    def setData(self, report_data):
+        logger.info("Setting new report data")
         self.data = report_data
-        
+        logger.info("Report data updated successfully")
 
     # PRE: <report_data> is a dictionary that contains the JSON report data.
     # POST: Returns a dictionary with the calculated statistics.
     #       This includes the total number of steps, successful steps, and success rate for  
-    #       each host.
+    #       each host. 
+    #       The steps are filtered to exclude omitted steps.
     def calculate_statistics(self):
-        total_steps = len(self.data["steps"])
-        successful_steps = sum(1 for step in self.data["steps"] if step["status"] == "Success")
+        logger.info("Starting statistics calculation")
+        total_steps = 0
+        successful_steps = 0
+        
+        if not self.data or "steps" not in self.data:
+            logger.warning("No data or steps found in report data")
+            return {
+                "total_steps": 0,
+                "successful_steps": 0,
+                "success_rate": 0,
+                "host_stats": {}
+            }
+            
+        for step in self.data["steps"]:
+            if step["status"] != "Omitted":
+                total_steps += 1
+            if step["status"] == "Success":
+                successful_steps += 1
+                
         success_rate = (successful_steps / total_steps * 100) if total_steps > 0 else 0
+        logger.info(f"Statistics calculated - Total steps: {total_steps}, Successful steps: {successful_steps}, Success rate: {success_rate:.2f}%")
 
         # Calculate per-host statistics
         host_stats = {}
         for host in self.data["hosts"]:
             host_name = host["host"]
-            host_steps = [step for step in self.data["steps"] if step["host"] == host_name]
+            host_steps = [step for step in self.data["steps"] if step["host"] == host_name and 
+                          step["status"] != "Omitted"]
             total_host_steps = len(host_steps)
             successful_host_steps = sum(1 for step in host_steps if step["status"] == "Success")
             host_success_rate = (successful_host_steps / total_host_steps * 100) \
@@ -56,9 +96,9 @@ class Statistics:
     #       The chart is saved as a PNG image in memory and encoded to base64.
     def generate_pie_chart(self, success_rate):
         plt.figure(figsize=(4, 4))
-        labels = ['Successful', 'Failed']
+        labels = ['Not Secure', 'Secure']
         sizes = [success_rate, 100-success_rate]
-        colors = ['#4CAF50', '#f44336']
+        colors = ['#f44336', '#4CAF50']
         
         plt.pie(sizes, 
                 colors=colors,
@@ -87,8 +127,8 @@ class Statistics:
         failed_rates = [100-rate for rate in success_rates]
         
         # Create stacked bar chart
-        bars1 = plt.barh(hosts, success_rates, color='#4CAF50', label='Successful', height=0.6)
-        bars2 = plt.barh(hosts, failed_rates, left=success_rates, color='#f44336', label='Failed',\
+        bars1 = plt.barh(hosts, success_rates, color='#f44336', label='Not Secure', height=0.6)
+        bars2 = plt.barh(hosts, failed_rates, left=success_rates, color='#4CAF50', label='Secure',\
                         height=0.6)
         
         # Add value labels

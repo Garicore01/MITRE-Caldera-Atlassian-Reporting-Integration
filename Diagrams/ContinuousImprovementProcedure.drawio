@@ -1,0 +1,317 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15" version="27.0.5">
+  <diagram name="Page-1" id="jNNzntuDBZ_wFnS1heDc">
+    <mxGraphModel dx="1198" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-3" target="fJ7udj6swN1w9Uc_hif5-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-3" value="Recibir tickets Jira" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="380" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fJ7udj6swN1w9Uc_hif5-4" target="fJ7udj6swN1w9Uc_hif5-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-4" value="Analizar aquellas abilities que generan positivos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="380" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-6" target="HGHOGtWTGJ6Q5tosEZST-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-6" value="Obtener los informes técnicos de las últimas 24 horas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="100" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-10" target="fJ7udj6swN1w9Uc_hif5-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-10" value="Analizar informe técnico asociado al ticket" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="380" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-11" target="fJ7udj6swN1w9Uc_hif5-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-11" value="Decidir si se considera &quot;falso positivo&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="380" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="fJ7udj6swN1w9Uc_hif5-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="450" />
+              <mxPoint x="610" y="110" />
+            </Array>
+            <mxPoint x="470" y="450" as="sourcePoint" />
+            <mxPoint x="630" y="112" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-15" value="[SI es falso&lt;div&gt;positivo]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="HGHOGtWTGJ6Q5tosEZST-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.8863" y="1" relative="1" as="geometry">
+            <mxPoint x="26" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fJ7udj6swN1w9Uc_hif5-12" target="D6lY2nh8In8zGEgYXZFJ-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-3" value="[NO es falso positivo]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="D6lY2nh8In8zGEgYXZFJ-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.381" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-12" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="400" y="410" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fJ7udj6swN1w9Uc_hif5-13" target="fJ7udj6swN1w9Uc_hif5-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-13" value="Abrir Caldera" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fJ7udj6swN1w9Uc_hif5-14" target="HGHOGtWTGJ6Q5tosEZST-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-14" value="Localizar el Adversary Profile del que proviene el &quot;falso positivo&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="162" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-15" target="fJ7udj6swN1w9Uc_hif5-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-15" value="Exportar el Adversary Profile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="850" y="372" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fJ7udj6swN1w9Uc_hif5-16" target="fJ7udj6swN1w9Uc_hif5-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-16" value="Importar el Adversary Profile exportado en el paso anterior" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="850" y="452" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-17" target="fJ7udj6swN1w9Uc_hif5-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-17" value="Modificar el nombre del Adversary Profile a formato: &quot;&amp;lt;Nombre Adversay&amp;gt; - &amp;lt;Cliente&amp;gt;&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="850" y="532" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-18" target="HGHOGtWTGJ6Q5tosEZST-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-18" value="Eliminar las abilities que generan los &quot;falsos positivos&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="850" y="642" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-8" target="fJ7udj6swN1w9Uc_hif5-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="500" as="sourcePoint" />
+            <mxPoint x="160" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="480" />
+              <mxPoint x="290" y="480" />
+              <mxPoint x="340" y="480" />
+              <mxPoint x="340" y="380" />
+              <mxPoint x="340" y="330" />
+              <mxPoint x="340" y="260" />
+              <mxPoint x="340" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-9" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="1061" as="sourcePoint" />
+            <mxPoint x="310" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-21" target="HGHOGtWTGJ6Q5tosEZST-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="862" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-21" value="Guardar el nuevo Adversary Profile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="850" y="750" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-22" target="D6lY2nh8In8zGEgYXZFJ-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="972" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-22" value="Modificar el Scheduler de CALDERA para ejecutar el nuevo Adversary Profile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="850" y="862" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-25" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Python Scripts&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="20" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-26" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;SEC NoLogin&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="615" y="20" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-34" value="[NO es&amp;nbsp;&lt;div&gt;necesario]&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-28" target="fJ7udj6swN1w9Uc_hif5-15" edge="1">
+          <mxGeometry x="-0.0667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-28" target="HGHOGtWTGJ6Q5tosEZST-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-37" value="[SI es necesario]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="HGHOGtWTGJ6Q5tosEZST-36" vertex="1" connectable="0">
+          <mxGeometry x="0.36" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-28" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="660" y="362" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-31" target="HGHOGtWTGJ6Q5tosEZST-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-31" value="Comprobar si el &quot;falso positivo&quot; es necesario para el correcto funcionamiento del Adversary Profile" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="242" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-35" target="HGHOGtWTGJ6Q5tosEZST-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-35" value="Obtener el id de la ability" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="482" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-38" target="HGHOGtWTGJ6Q5tosEZST-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-38" value="Acceder al repo WhiteList de GitLab" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="578" width="120" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-40" target="HGHOGtWTGJ6Q5tosEZST-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-40" value="Localizar la WhiteList del cliente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="672" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-42" target="HGHOGtWTGJ6Q5tosEZST-50" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="972" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-42" value="Escribir el id de la ability copiado anteriormente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="762" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-44" target="HGHOGtWTGJ6Q5tosEZST-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-44" value="Descargar WhiteList de GitLab" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="100" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-46" value="Modificar el estado de las abilities de la WhiteList a &quot;Omitted&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="100" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HGHOGtWTGJ6Q5tosEZST-46" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="610" as="sourcePoint" />
+            <mxPoint x="160" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-52" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="677.5" y="862" width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-50" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="HGHOGtWTGJ6Q5tosEZST-52" vertex="1">
+          <mxGeometry width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-51" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="HGHOGtWTGJ6Q5tosEZST-52" vertex="1">
+          <mxGeometry x="5.625" y="5.625" width="33.75" height="33.75" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="D6lY2nh8In8zGEgYXZFJ-1" target="D6lY2nh8In8zGEgYXZFJ-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-1" value="Realizar acciones necesarias para parchear el error" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="380" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fJ7udj6swN1w9Uc_hif5-7" target="D6lY2nh8In8zGEgYXZFJ-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-7" value="Subir informe a Confluence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="20" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fJ7udj6swN1w9Uc_hif5-8" value="Generar ticket Jira por cada ability en estado &quot;Success&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="170" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-1" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=3;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="370" as="sourcePoint" />
+            <mxPoint x="290" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="fJ7udj6swN1w9Uc_hif5-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="370" as="sourcePoint" />
+            <mxPoint x="310" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HGHOGtWTGJ6Q5tosEZST-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="fJ7udj6swN1w9Uc_hif5-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="370" as="sourcePoint" />
+            <mxPoint x="210" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-9" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="60" y="520" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-5" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="D6lY2nh8In8zGEgYXZFJ-9" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-6" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="D6lY2nh8In8zGEgYXZFJ-9" source="D6lY2nh8In8zGEgYXZFJ-5" target="D6lY2nh8In8zGEgYXZFJ-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="120" as="sourcePoint" />
+            <mxPoint x="30" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-7" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="D6lY2nh8In8zGEgYXZFJ-9" source="D6lY2nh8In8zGEgYXZFJ-5" target="D6lY2nh8In8zGEgYXZFJ-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="240" as="sourcePoint" />
+            <mxPoint x="80" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-10" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="420" y="622" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="D6lY2nh8In8zGEgYXZFJ-10" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-12" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="D6lY2nh8In8zGEgYXZFJ-10" source="D6lY2nh8In8zGEgYXZFJ-11" target="D6lY2nh8In8zGEgYXZFJ-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="120" as="sourcePoint" />
+            <mxPoint x="30" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="D6lY2nh8In8zGEgYXZFJ-10" source="D6lY2nh8In8zGEgYXZFJ-11" target="D6lY2nh8In8zGEgYXZFJ-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="240" as="sourcePoint" />
+            <mxPoint x="80" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Nota&lt;/h1&gt;&lt;h1 style=&quot;text-align: justify; margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;Este procedimiento es una mejora continua, por lo que al principio se crearan tickets para cada una de las abilities que están en estado &quot;Success&quot;, con el paso del tiempo las WhiteLists de los distintos clientes, se irán completando y se irán creando Adversaries Profiles personalizados. Por lo que la mayor parte de tickets que se generen, serán casos reales en los que el equipo de SEC tendrá que tomar las medidas oportunas&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry y="640" width="300" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-17" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="887.5" y="972" width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-18" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="D6lY2nh8In8zGEgYXZFJ-17" vertex="1">
+          <mxGeometry width="45" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="D6lY2nh8In8zGEgYXZFJ-19" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="D6lY2nh8In8zGEgYXZFJ-17" vertex="1">
+          <mxGeometry x="5.625" y="5.625" width="33.75" height="33.75" as="geometry" />
+        </mxCell>
+        <mxCell id="i_HGnIvlWjASdGTl5KXM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="i_HGnIvlWjASdGTl5KXM-1" target="fJ7udj6swN1w9Uc_hif5-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_HGnIvlWjASdGTl5KXM-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="20" y="100" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IxGetkVKzl7HLl_HVIDo-1" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="1051" as="sourcePoint" />
+            <mxPoint x="590" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxGetkVKzl7HLl_HVIDo-2" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;WOD NoLogin&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="355" y="20" width="170" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

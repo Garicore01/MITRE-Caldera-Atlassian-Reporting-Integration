@@ -1,0 +1,151 @@
+@startuml
+' Main classes
+class CreateReport {
+    - report: dict
+    - event_logs: list
+    - whitelist: WhiteList
+    - __html: GenerateHtml
+    + __init__(report=None, event_logs=None)
+    + setReport(report: dict)
+    + setEventLogs(event_logs: list)
+    + extract_relevant_data(white_list: WhiteList): dict
+    + create_report(data: dict): str
+    - __extract_relevant_data(white_list: WhiteList): dict
+    - __set_status(ability_id: str, group: str, status: int, white_list: WhiteList): str
+    - __extract_output(pid: str): str
+}
+
+class WhiteList {
+    - __token: str
+    - __url: str
+    - __zip_filename: str
+    - __output_dir: str
+    - __name_dir: str
+    + __init__()
+    + initialize(): bool
+    + download_whitelists()
+    + is_in_whitelist(ability_id: str, group: str): bool
+    - __download_zip()
+    - __extract_zip()
+}
+
+class GenerateHtml {
+    - report_data: dict
+    - __stats: Statistics
+    + __init__(report_data=None)
+    + setData(report_data: dict)
+    + create_html(): str
+}
+
+class Statistics {
+    - data: dict
+    + __init__(report_data=None)
+    + setData(report_data: dict)
+    + calculate_statistics(): dict
+    + generate_pie_chart(success_rate: float): str
+    + generate_host_chart(host_stats: dict): str
+}
+
+class Operation {
+    - _endpoint: str
+    + __init__(server: str, api_key: str)
+    + getEndpoint(): str
+    + get_inform(operationId: str): dict
+    + get_event_logs(operationId: str): list
+    + get_new_id_operations(): list
+    + delete_operation(operationId: str): bool
+    + get_last_24_hours_new_id_operations(): list
+    - __get_operation_results(typeOfResult: str, operationId: str): dict
+    - __get_new_operations(): list
+}
+
+class CreatePage {
+    - url: str
+    - auth: aiohttp.BasicAuth
+    - __html_content: str
+    + __init__(url: str, email: str, token: str)
+    + setHtmlContent(html_content: str)
+    + create(space_id: str, title: str, parent_id: str): dict
+}
+
+class JiraReport {
+    - __url: str
+    - __email: str
+    - __token: str
+    - __project_id: str
+    - __issue_type: str
+    - auth: aiohttp.BasicAuth
+    + __init__()
+    + create_tickets(data: dict, white_list: WhiteList)
+    - __create(title: str, data: dict): dict
+}
+
+class CalderaApi {
+    - _server: str
+    - _api_key: str
+    + __init__(server: str, api_key: str)
+    + getUrl(): str
+    + getHeaders(): dict
+}
+
+' Main flow
+class Main {
+    + __main__()
+    - extract_data(inform: dict, event_logs: list, report_html: CreateReport, whiteList: WhiteList): dict
+    - create_tickets(relevant_data: dict, whiteList: WhiteList, jira: JiraReport)
+    - create_page(confluence_space_id: str, confluence_father_id: str, title: str, relevant_data: dict, report_html: CreateReport, page: CreatePage)
+}
+
+' Relationships
+CreateReport --> WhiteList : uses
+CreateReport --> GenerateHtml : uses
+GenerateHtml --> Statistics : uses
+Operation --|> CalderaApi : inherits
+Operation ..> "aiohttp.BasicAuth" : uses
+CreatePage ..> "aiohttp.BasicAuth" : uses
+JiraReport ..> "aiohttp.BasicAuth" : uses
+WhiteList ..> "aiohttp.BasicAuth" : uses
+Statistics ..> "matploitlib.pyplot" : uses
+GenerateHtml ..> "jinja2.Template" : uses
+JiraReport --> WhiteList : uses
+
+' Main flow relationships
+Main --> Operation : uses
+Main --> CreateReport : uses
+Main --> WhiteList : uses
+Main --> CreatePage : uses
+Main --> JiraReport : uses
+
+note right of Operation
+  Handles Caldera API operations
+  and manages operation data
+end note
+
+note right of CreatePage
+  Creates Confluence pages
+  with report content
+end note
+
+note right of JiraReport
+  Creates Jira tickets for
+  successful vulnerabilities
+end note
+
+note right of CalderaApi
+  Base class for Caldera API
+  interactions
+end note
+
+note right of Main
+  Orchestrates the flow:
+  1. Get operations from Caldera
+  2. Process each operation
+  3. Create reports and tickets
+  4. Clean up operations
+end note
+
+note right of Statistics
+  Uses matplotlib for charts
+  and base64 for encoding
+end note
+@enduml

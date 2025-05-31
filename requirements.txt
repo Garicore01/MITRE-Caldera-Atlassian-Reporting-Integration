@@ -1,0 +1,22 @@
+# Requirements for the MITRE Caldera Client
+# Author: Gari Arellano
+# Date: 2025
+
+# HTTP client for async requests
+aiohttp>=3.8.4
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Data visualization
+matplotlib>=3.7.1
+
+# HTML template engine
+jinja2>=3.1.2
+
+# HTTP client for synchronous requests
+requests>=2.31.0
+
+# For visualization in the Statistics module
+numpy>=1.24.3
+pandas>=2.0.1 

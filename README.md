@@ -1,94 +1,93 @@
-# Advanced Cybersecurity Laboratory with Atomic Red Team
+# MITRE Caldera
 
-Welcome to the **Advanced Cybersecurity Laboratory Project** repository. This project is part of my Final Degree Project titled _"Development of an Advanced Cybersecurity Laboratory Using Atomic Red Team"_.
 
-This initiative aims to provide a comprehensive platform for testing, analyzing, and defending against simulated cyber-attacks using the powerful capabilities of Atomic Red Team. The project integrates threat simulations, alerting mechanisms, and detection strategies tailored for security operations centers (SOC).
 
----
+## Getting started
 
-## 🚀 Project Objectives
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-- **Threat Simulation:** Utilize Atomic Red Team to simulate a wide range of cyber-attacks based on real-world adversary tactics.
-- **Detection Engineering:** Create detection rules and scenarios using YARA, SIEM use cases, and OpenEDR responses.
-- **Alert Generation:** Configure alerts in security tools like Wazuh to trigger upon detection of simulated threats.
-- **Educational Resource:** Provide a structured framework for cybersecurity professionals to practice and improve their skills.
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
----
+## Add your files
 
-## 🛠️ Tools and Technologies
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-- **Atomic Red Team:** For executing controlled and realistic attack scenarios.
-- **Wazuh:** To configure and trigger alerts based on detection use cases.
-- **OpenEDR:** For response mechanisms to simulated security incidents.
-- **YARA Rules:** For creating custom threat detection rules.
-- **SIEM Integration:** Configuration and testing of use cases within QRadar.
+```
+cd existing_repo
+git remote add origin http://repo.workondata.com/gari.arellano/mitre-caldera.git
+git branch -M master
+git push -uf origin master
+```
 
----
+## Integrate with your tools
 
-## 📖 Structure of the Repository
+- [ ] [Set up project integrations](http://repo.workondata.com/gari.arellano/mitre-caldera/-/settings/integrations)
 
-- `/atomic_tests/`: Scripts and configurations for executing Atomic Red Team scenarios.
-- `/detection_rules/`: Custom YARA rules and SIEM configurations.
-- `/alerts/`: Documentation on alerts triggered by detection mechanisms.
-- `/reports/`: Analysis and reports on tests and results.
+## Collaborate with your team
 
----
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-## 📌 Getting Started
+## Test and Deploy
 
-### Prerequisites
+Use the built-in continuous integration in GitLab.
 
-- Install [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
-- Set up Wazuh, OpenEDR, and other security tools as outlined in the `/setup` directory.
-- Ensure your environment supports Docker and virtualization.
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-### Installation
+***
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/advanced-cyber-lab.git
-   cd advanced-cyber-lab
-   ```
+# Editing this README
 
-2. Follow the instructions in the `/setup` directory to configure the lab environment.
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-### Usage
+## Suggestions for a good README
 
-- Execute Atomic Red Team tests as documented in `/atomic_tests`.
-- Monitor alerts and analyze reports from Wazuh and OpenEDR.
-- Customize detection rules to suit evolving security needs.
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
----
+## Name
+Choose a self-explaining name for your project.
 
-## 🔍 Key Features
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-- Realistic cyber-attack simulations for enhanced SOC training.
-- Comprehensive detection and alerting mechanisms.
-- Modular and scalable architecture.
-- Extensive documentation for ease of use.
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
----
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## 📊 Results and Analysis
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-- Detailed reports on threat simulations and detection efficiency.
-- Recommendations for improving cybersecurity postures.
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
----
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-## 🤝 Contributions
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-Contributions are welcome! Feel free to submit issues, pull requests, or suggestions to enhance the project.
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
 
----
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-## 📄 License
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
 
----
+## License
+For open source projects, say how it is licensed.
 
-## 🙋 Contact
-
-For questions, feedback, or collaboration opportunities, please contact me via gariiarellano01@gmail.com.
-
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.

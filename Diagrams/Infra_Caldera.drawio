@@ -1,0 +1,143 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Safari/605.1.15" version="26.2.14">
+  <diagram name="Page-1" id="j4Znoy6n0Gpt7thYwW8D">
+    <mxGraphModel dx="1454" dy="1034" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="ZFnWMjaP7Oclfi1fNEVr-19" target="ZFnWMjaP7Oclfi1fNEVr-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="220" />
+              <mxPoint x="650" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-19" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="590" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-20" value="Red NoLogin" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="10" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="30" width="480" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry y="30" width="480" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-3" value="CALDERA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry x="20" y="50" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-4" value="Servicio Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry x="250" y="50" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-5" value="Proxmox VE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry x="204" y="7" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-6" value="Ubuntu Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry x="90" y="28" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-7" value="Ubuntu Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry x="300" y="28" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-18" value="" style="group" vertex="1" connectable="0" parent="ZFnWMjaP7Oclfi1fNEVr-21">
+          <mxGeometry x="77.5" y="210" width="325" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-9" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="30" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="65" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="100" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-14" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="130" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-15" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="160" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-16" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-17" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="220" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-12" value="OTRAS MAQUINAS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-18">
+          <mxGeometry x="245" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-42" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="830" y="50" width="320" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-24" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry y="30" width="320" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-25" value="Red Cliente" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="121.09" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-27" value="" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="20" y="60" width="68" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-28" value="" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="126" y="60" width="68" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-29" value="" style="shape=mxgraph.signs.tech.computer;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="240" y="60" width="68" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-30" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.traditional_server;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="32" y="165" width="45" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-31" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.traditional_server;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="137.5" y="165" width="45" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-32" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.traditional_server;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="251.5" y="165" width="45" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-33" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://logowik.com/content/uploads/images/mac-os.jpg;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="247.36" y="65" width="53.29" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-34" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://loghi-famosi.com/wp-content/uploads/2021/03/Windows-New-Logo.png;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="126" y="65.51999999999998" width="70.18" height="39.48" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-35" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://seeklogo.com/images/L/linux-logo-704D6BB91C-seeklogo.com.png;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="34" y="65" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-36" value="Equipo Linux" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="14" y="130" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-37" value="Equipo Windows" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="120" y="130" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-38" value="Equipo MacOS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="234" y="130" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-39" value="Servidor 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="14" y="243" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-40" value="Servidor 2&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Servidor%201%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2254%22%20y%3D%22733%22%20width%3D%2280%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="120" y="243" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-41" value="Servidor 3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ZFnWMjaP7Oclfi1fNEVr-42">
+          <mxGeometry x="234.01" y="243" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-46" value="" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.tunnel;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="210" width="93.05" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="ZFnWMjaP7Oclfi1fNEVr-24" target="ZFnWMjaP7Oclfi1fNEVr-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="220" />
+              <mxPoint x="820" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZFnWMjaP7Oclfi1fNEVr-50" value="Internet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="205" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

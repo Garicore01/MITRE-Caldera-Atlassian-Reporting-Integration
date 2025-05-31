@@ -1,0 +1,297 @@
+{
+    "name": "Operation-Test",
+    "host_group": [
+      {
+        "paw": "dkrtun",
+        "sleep_min": 30,
+        "sleep_max": 60,
+        "watchdog": 0,
+        "group": "red",
+        "architecture": "amd64",
+        "platform": "linux",
+        "server": "http://10.111.8.251:8888",
+        "upstream_dest": "http://10.111.8.251:8888",
+        "username": "root",
+        "location": "/home/caldera-ubuntu/Escritorio/splunkd",
+        "pid": 14354,
+        "ppid": 14351,
+        "trusted": true,
+        "executors": [
+          "proc",
+          "sh"
+        ],
+        "privilege": "Elevated",
+        "exe_name": "splunkd",
+        "host": "caldera-ubuntu-Standard-PC-i440FX-PIIX-1996",
+        "contact": "HTTP",
+        "proxy_receivers": {},
+        "proxy_chain": [],
+        "origin_link_id": "",
+        "deadman_enabled": true,
+        "available_contacts": [
+          "HTTP"
+        ],
+        "host_ip_addrs": [
+          "10.111.8.252"
+        ],
+        "display_name": "caldera-ubuntu-Standard-PC-i440FX-PIIX-1996$root",
+        "created": "2025-03-10T16:17:18Z",
+        "last_seen": "2025-03-11T08:30:47Z",
+        "links": [
+          {
+            "id": "a90c116a-ab51-4ac1-ae5e-296e3867d07c",
+            "paw": "dkrtun",
+            "command": "PiAkSE9NRS8uYmFzaF9oaXN0b3J5ICYmIHVuc2V0IEhJU1RGSUxF",
+            "plaintext_command": "PiAkSE9NRS8uYmFzaF9oaXN0b3J5ICYmIHVuc2V0IEhJU1RGSUxF",
+            "status": 0,
+            "score": 0,
+            "jitter": 0,
+            "decide": "2025-03-10T16:17:18Z",
+            "pin": 0,
+            "pid": "37737",
+            "facts": [],
+            "relationships": [],
+            "used": [],
+            "unique": "a90c116a-ab51-4ac1-ae5e-296e3867d07c",
+            "collect": "2025-03-10T16:17:18Z",
+            "finish": "2025-03-10T16:17:18Z",
+            "ability": {
+              "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+              "tactic": "defense-evasion",
+              "technique_name": "Indicator Removal on Host: Clear Command History",
+              "technique_id": "T1070.003",
+              "name": "Avoid logs",
+              "description": "Stop terminal from logging history",
+              "executors": [
+                {
+                  "name": "sh",
+                  "platform": "darwin",
+                  "command": "> $HOME/.bash_history && unset HISTFILE",
+                  "code": null,
+                  "language": null,
+                  "build_target": null,
+                  "payloads": [],
+                  "uploads": [],
+                  "timeout": 60,
+                  "parsers": [],
+                  "cleanup": [],
+                  "variations": [],
+                  "additional_info": {}
+                },
+                {
+                  "name": "sh",
+                  "platform": "linux",
+                  "command": "> $HOME/.bash_history && unset HISTFILE",
+                  "code": null,
+                  "language": null,
+                  "build_target": null,
+                  "payloads": [],
+                  "uploads": [],
+                  "timeout": 60,
+                  "parsers": [],
+                  "cleanup": [],
+                  "variations": [],
+                  "additional_info": {}
+                },
+                {
+                  "name": "psh",
+                  "platform": "windows",
+                  "command": "Clear-History;Clear",
+                  "code": null,
+                  "language": null,
+                  "build_target": null,
+                  "payloads": [],
+                  "uploads": [],
+                  "timeout": 60,
+                  "parsers": [],
+                  "cleanup": [],
+                  "variations": [],
+                  "additional_info": {}
+                }
+              ],
+              "requirements": [],
+              "privilege": null,
+              "repeatable": false,
+              "buckets": [
+                "defense-evasion"
+              ],
+              "additional_info": {},
+              "access": {},
+              "singleton": false,
+              "plugin": "stockpile",
+              "delete_payload": true
+            },
+            "executor": {
+              "name": "sh",
+              "platform": "linux",
+              "command": "> $HOME/.bash_history && unset HISTFILE",
+              "code": null,
+              "language": null,
+              "build_target": null,
+              "payloads": [],
+              "uploads": [],
+              "timeout": 60,
+              "parsers": [],
+              "cleanup": [],
+              "variations": [],
+              "additional_info": {}
+            },
+            "cleanup": 0,
+            "visibility": {
+              "score": 50,
+              "adjustments": []
+            },
+            "host": "caldera-ubuntu-Standard-PC-i440FX-PIIX-1996",
+            "output": "False",
+            "deadman": false,
+            "agent_reported_time": "2025-03-10T16:17:18Z"
+          }
+        ],
+        "pending_contact": "HTTP"
+      }
+    ],
+    "start": "2025-03-11T08:27:59Z",
+    "steps": {
+      "dkrtun": {
+        "steps": [
+          {
+            "link_id": "9d9453a7-970a-4083-b134-dedd435209e8",
+            "ability_id": "d9eaee9a1d1851fa44d69442f0bb3fe0",
+            "command": "eval \"$(echo dXNlcmFkZCAtTSAtTiAtciAtcyAvYmluL2Jhc2ggLWMgZXZpbF9hY2NvdW50IGV2aWxfdXNlcg== | base64 --decode)\"",
+            "plaintext_command": "useradd -M -N -r -s /bin/bash -c evil_account evil_user",
+            "delegated": "2025-03-11T08:27:59Z",
+            "run": "2025-03-11T08:28:51Z",
+            "status": 0,
+            "platform": "linux",
+            "executor": "sh",
+            "pid": 40107,
+            "description": "Create a user via useradd\n",
+            "name": "Create a user account on a Linux system",
+            "attack": {
+              "tactic": "persistence",
+              "technique_name": "Create Account: Local Account",
+              "technique_id": "T1136.001"
+            },
+            "agent_reported_time": "2025-03-11T08:28:51Z"
+          },
+          {
+            "link_id": "2367e4a7-b549-4fbc-b116-681254473ca4",
+            "ability_id": "d9eaee9a1d1851fa44d69442f0bb3fe0",
+            "command": "userdel evil_user",
+            "plaintext_command": "",
+            "delegated": "2025-03-11T08:29:24Z",
+            "run": "2025-03-11T08:30:09Z",
+            "status": 0,
+            "platform": "linux",
+            "executor": "sh",
+            "pid": 40127,
+            "description": "Create a user via useradd\n",
+            "name": "Create a user account on a Linux system",
+            "attack": {
+              "tactic": "persistence",
+              "technique_name": "Create Account: Local Account",
+              "technique_id": "T1136.001"
+            },
+            "agent_reported_time": "2025-03-11T08:30:09Z"
+          }
+        ]
+      }
+    },
+    "finish": "2025-03-11T08:30:09Z",
+    "planner": "atomic",
+    "adversary": {
+      "adversary_id": "800b9db0-55eb-41d4-bb08-f8e185a36bf2",
+      "name": "Linux-Adv-Profile",
+      "description": "Linux MITRE techniques",
+      "atomic_ordering": [
+        "d9eaee9a1d1851fa44d69442f0bb3fe0"
+      ],
+      "objective": "495a9828-cab1-44dd-a0ca-66e58177d8cc",
+      "tags": [],
+      "has_repeatable_abilities": false,
+      "plugin": ""
+    },
+    "jitter": "2/8",
+    "objectives": {
+      "id": "495a9828-cab1-44dd-a0ca-66e58177d8cc",
+      "name": "default",
+      "description": "This is a default objective that runs forever.",
+      "goals": [
+        {
+          "target": "exhaustion",
+          "value": "complete",
+          "count": 1048576,
+          "operator": "==",
+          "achieved": false
+        }
+      ],
+      "percentage": 0
+    },
+    "facts": [
+      {
+        "unique": "file.sensitive.extensionwav",
+        "trait": "file.sensitive.extension",
+        "name": "file.sensitive.extension",
+        "value": "wav",
+        "created": "2025-03-10T16:17:02Z",
+        "score": 1,
+        "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+        "origin_type": "IMPORTED",
+        "links": [],
+        "relationships": [],
+        "limit_count": -1,
+        "collected_by": [],
+        "technique_id": ""
+      },
+      {
+        "unique": "file.sensitive.extensionyml",
+        "trait": "file.sensitive.extension",
+        "name": "file.sensitive.extension",
+        "value": "yml",
+        "created": "2025-03-10T16:17:02Z",
+        "score": 1,
+        "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+        "origin_type": "IMPORTED",
+        "links": [],
+        "relationships": [],
+        "limit_count": -1,
+        "collected_by": [],
+        "technique_id": ""
+      },
+      {
+        "unique": "file.sensitive.extensionpng",
+        "trait": "file.sensitive.extension",
+        "name": "file.sensitive.extension",
+        "value": "png",
+        "created": "2025-03-10T16:17:02Z",
+        "score": 1,
+        "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+        "origin_type": "IMPORTED",
+        "links": [],
+        "relationships": [],
+        "limit_count": -1,
+        "collected_by": [],
+        "technique_id": ""
+      },
+      {
+        "unique": "server.malicious.urlkeyloggedsite.com",
+        "trait": "server.malicious.url",
+        "name": "server.malicious.url",
+        "value": "keyloggedsite.com",
+        "created": "2025-03-10T16:17:02Z",
+        "score": 1,
+        "source": "ed32b9c3-9593-4c33-b0db-e2007315096b",
+        "origin_type": "IMPORTED",
+        "links": [],
+        "relationships": [],
+        "limit_count": -1,
+        "collected_by": [],
+        "technique_id": ""
+      }
+    ],
+    "skipped_abilities": [
+      {
+        "dkrtun": []
+      }
+    ]
+  }

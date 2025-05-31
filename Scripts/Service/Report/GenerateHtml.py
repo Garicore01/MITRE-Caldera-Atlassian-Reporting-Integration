@@ -12,18 +12,26 @@ from ..Statistics import Statistics
 
 class GenerateHtml:
     
-    def __init__(self, report_data):
+    def __init__(self, report_data=None):
+        self.report_data = report_data if report_data is not None else ""
+        self.__stats = Statistics()
+
+    # PRE: <report_data> is a dictionary that contains the JSON report data.
+    # POST: Sets the report_data attribute to the given value.
+    def setData(self, report_data):
         self.report_data = report_data
+        
 
     # PRE: <report_data> is a dictionary that contains the JSON report data.
     # POST: Returns an HTML string that represents the report.
     # OBS: The HTML has inline CSS because it is going to be used in Confluence. 
     #      With style tags Confluence doesn't render the CSS.
     def create_html(self):
-        statistics = Statistics(self.report_data)
-        stats = statistics.calculate_statistics()
-        pie_chart = statistics.generate_pie_chart(stats['success_rate'])
-        host_chart = statistics.generate_host_chart(stats['host_stats'])
+        ##statistics = Statistics(self.report_data)
+        self.__stats.setData(self.report_data)
+        stats = self.__stats.calculate_statistics()
+        pie_chart = self.__stats.generate_pie_chart(stats['success_rate'])
+        host_chart = self.__stats.generate_host_chart(stats['host_stats'])
         
         template = Template("""
         <!DOCTYPE html>
@@ -36,7 +44,14 @@ class GenerateHtml:
         <body style="font-family: Arial, sans-serif; margin: 20px;">
             <h1 style="color: #333;">MITRE Caldera Operation Report</h1>
             <h2 style="color: #333;">Operation: {{ report.name }}</h2>
-            <h2 style="color: #333;">Client: {{ report.group }}</h2>
+            {# In case the operation is executed in multiple clients, we show the list of 
+            # clients.
+            # In theory, the operation should be executed in only one client. #}
+            {% if report.group|length == 1 %}
+            <h2 style="color: #333;">Client: {{ report.group[0] }}</h2>
+            {% else %}
+            <h2 style="color: #333;">Clients: {{ report.group|join(', ') }}</h2>
+            {% endif %}
             
             <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
                 <div style="flex: 1; min-width: 300px; padding: 20px; border-radius: 8px; 

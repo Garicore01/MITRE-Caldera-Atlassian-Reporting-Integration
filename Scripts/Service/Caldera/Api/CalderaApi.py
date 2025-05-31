@@ -30,6 +30,6 @@ class CalderaApi(ABC):
     def getHeaders(self):
         return self.__headers
     
-    @abstractmethod
+    """@abstractmethod
     def make_request(self, enpoint):
-        pass
+        pass"""
