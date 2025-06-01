@@ -107,6 +107,38 @@ docker run -d \
 
 Note: Make sure your `.env` file is properly configured before running the container.
 
+## Service Configuration
+
+The project includes a systemd service configuration file (`Configuration/caldera.service`) that allows you to run MITRE Caldera as a system service. This configuration:
+
+- Automatically starts Caldera when the system boots
+- Restarts the service if it crashes
+- Runs under a dedicated `caldera` user
+- Ensures the service starts after network connectivity is established
+
+To set up the service:
+
+1. Copy the service file to the systemd directory:
+```bash
+sudo cp Configuration/caldera.service /etc/systemd/system/
+```
+
+2. Reload systemd to recognize the new service:
+```bash
+sudo systemctl daemon-reload
+```
+
+3. Enable and start the service:
+```bash
+sudo systemctl enable caldera
+sudo systemctl start caldera
+```
+
+You can check the service status with:
+```bash
+sudo systemctl status caldera
+```
+
 ## Logging
 
 Logs are stored in the configured `log_dir` with the format:
