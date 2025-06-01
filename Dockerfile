@@ -12,11 +12,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the entire application
-COPY Scripts/ /app/Scripts/
+COPY src/ /app/src/
 
 # Create necessary directories
-RUN mkdir -p /app/Scripts/Service/builds
-RUN mkdir -p /app/Scripts/repository
+RUN mkdir -p /app/src/Service/builds
+RUN mkdir -p /app/src/repository
 RUN mkdir -p /app/logs
 
 
@@ -24,8 +24,8 @@ RUN mkdir -p /app/logs
 ENV PYTHONPATH=/app
 
 # Default command
-CMD ["python", "Scripts/main.py"]
+CMD ["python", "src/main.py"]
 
 # You can override the CMD with your custom command when running the container
-# Example: docker run -it --rm your-image python Scripts/your_script.py 
+# Example: docker run -it --rm your-image python src/your_script.py 
 # Example2: docker run --env-file .env mitre-caldera-client
