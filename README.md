@@ -63,7 +63,7 @@ jira_project_id=your_jira_project_id
 
 ```
 mitre-caldera/
-├── Scripts/
+├── src/
 │   ├── Service/
 │   │   ├── Caldera/      # CALDERA API integration
 │   │   ├── Report/       # Report generation
