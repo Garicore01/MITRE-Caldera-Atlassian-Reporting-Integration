@@ -1,12 +1,12 @@
 [ Unit ]
-Description = Caldera Server
-After = network . target
+Description=Caldera Server
+After=network.target
 
 [ Service ]
-ExecStart =/ usr / bin / python3 / home / caldera / caldera / server . py
-WorkingDirectory =/ home / caldera / caldera
-Restart = always
-User = caldera
+ExecStart=/usr/bin/python3/home/caldera/caldera/server.py
+WorkingDirectory=/home/caldera/caldera
+Restart=always
+User=caldera
 
 [ Install ]
-WantedBy = multi - user . target
+WantedBy=multi-user.target
