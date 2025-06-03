@@ -57,6 +57,7 @@ jira_url=your_jira_url
 jira_issue_type=your_jira_issue_type
 jira_token=your_jira_token
 jira_project_id=your_jira_project_id
+jira_title=first_part_of_title_for_jira_tickets
 ```
 
 ## Project Structure

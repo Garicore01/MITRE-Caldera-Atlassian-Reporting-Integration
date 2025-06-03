@@ -40,8 +40,9 @@ class JiraReport:
                     not white_list.is_in_whitelist(step["ability_id"], step["group"])
                 ):
                     logger.debug(f"Creating ticket for successful step: {step['name']}")
-                    title = f"TFG Gari-Pruebas-Vulnerabilidad {step['name']} encontrada en " \
-                            f"{step['group']}"
+                    title = os.getenv("jira_title") + f" - {step['name']} encontrada en {step['group']}"
+                    #title = f"TFG Gari-Pruebas-Vulnerabilidad {step['name']} encontrada en " \
+                    #        f"{step['group']}"
                     logger.info(f"Starting ticket creation for title: {title}")
                     await self.__create(title, title_report,step)
 
