@@ -107,7 +107,7 @@ class Statistics:
                 autopct='%1.1f%%',
                 textprops={'fontsize': 10})
         plt.axis('equal')
-        plt.title('Overall Success Rate', pad=10, fontsize=12)
+        plt.title('Overall Secure Rate', pad=10, fontsize=12)
         
         # Save to bytes
         buf = BytesIO()
@@ -140,8 +140,8 @@ class Statistics:
                         ha='center', va='center', color='white', fontweight='bold', fontsize=14)
         
         plt.xlim(0, 100)
-        plt.xlabel('Success Rate (%)', fontsize=16)
-        plt.title('Success Rate by Host', pad=20, fontsize=18)
+        plt.xlabel('Secure Rate (%)', fontsize=16)
+        plt.title('Secure Rate by Host', pad=20, fontsize=18)
         plt.legend(loc='lower right', bbox_to_anchor=(1, 1), fontsize=14)
         
         # Adjust tick label size
