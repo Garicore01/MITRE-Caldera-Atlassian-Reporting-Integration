@@ -66,20 +66,20 @@ mitre-caldera/
 ├── src/
 │   ├── Service/
 │   │   ├── Caldera/      # CALDERA API integration
-│   │   │   └── Utils/    # Utility scripts for Caldera
-│   │   │       ├── install_caldera_agent_win_v2.ps1  # Windows agent installation and persistence
-│   │   │       ├── update-caldera.sh                 # Caldera server update script
-│   │   │       └── backup.sh                         # Caldera backup automation
 │   │   ├── Report/       # Report generation
 │   │   ├── Tickets/      # Jira ticket management
 │   │   ├── Statistics/   # Statistical analysis
 │   │   └── logs/         # Log files
+│   ├── Utils/           # Utility scripts
+│   │   ├── install_caldera_agent_win_v2.ps1  # Windows agent installation and persistence
+│   │   ├── update-caldera.sh                 # Caldera server update script
+│   │   └── backup.sh                         # Caldera backup automation
 │   └── main.py          # Main service entry point
 ```
 
 ## Utility Scripts
 
-The project includes several utility scripts in the `src/Service/Caldera/Utils` directory:
+The project includes several utility scripts in the `src/Utils` directory:
 
 ### Windows Agent Installation (`install_caldera_agent_win_v2.ps1`)
 - PowerShell script for installing and configuring Caldera agent on Windows systems
