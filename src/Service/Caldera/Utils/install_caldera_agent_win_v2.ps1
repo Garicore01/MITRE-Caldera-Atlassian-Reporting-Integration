@@ -1,5 +1,5 @@
 ﻿# --- CONFIGURACIÓN ---
-$agentUrl = "http:/<YOUR_CALDERA_IP>/file/download"
+$agentUrl = "http://<YOUR_CALDERA_IP>/file/download"
 $agentFilename = "caldera-agent.exe"
 $installPath = <PATH_TO_INSTALL_CALDERA_AGENT>
 $nssmUrl = "https://nssm.cc/release/nssm-2.24.zip"
