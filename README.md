@@ -66,12 +66,44 @@ mitre-caldera/
 ├── src/
 │   ├── Service/
 │   │   ├── Caldera/      # CALDERA API integration
+│   │   │   └── Utils/    # Utility scripts for Caldera
+│   │   │       ├── install_caldera_agent_win_v2.ps1  # Windows agent installation and persistence
+│   │   │       ├── update-caldera.sh                 # Caldera server update script
+│   │   │       └── backup.sh                         # Caldera backup automation
 │   │   ├── Report/       # Report generation
 │   │   ├── Tickets/      # Jira ticket management
 │   │   ├── Statistics/   # Statistical analysis
 │   │   └── logs/         # Log files
 │   └── main.py          # Main service entry point
 ```
+
+## Utility Scripts
+
+The project includes several utility scripts in the `src/Service/Caldera/Utils` directory:
+
+### Windows Agent Installation (`install_caldera_agent_win_v2.ps1`)
+- PowerShell script for installing and configuring Caldera agent on Windows systems
+- Creates a persistent Windows service using NSSM
+- Configures automatic startup and recovery options
+- Sets up necessary firewall rules
+- Requires administrative privileges
+
+### Caldera Server Update (`update-caldera.sh`)
+- Bash script for updating Caldera to the latest version
+- Stops the Caldera service before update
+- Pulls latest changes from master branch
+- Installs new dependencies
+- Restarts the service
+- Requires root privileges
+- ⚠️ Note: Operations and Schedules are not preserved during update
+
+### Backup Automation (`backup.sh`)
+- Creates compressed backups of the Caldera installation
+- Maintains a history of the last 5 backups
+- Automatically manages backup rotation
+- Logs backup operations
+- Requires root privileges
+- Backups are stored in `/var/backups/caldera`
 
 ## Usage
 
