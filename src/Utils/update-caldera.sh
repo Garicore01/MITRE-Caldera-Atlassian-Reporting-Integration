@@ -30,7 +30,7 @@ sudo systemctl stop caldera
 
 # Pull the latest changes from the master branch
 print_message "Updating Caldera..."
-git pull origin master
+git pull origin master --recurse-submodules
 
 # Install any new dependencies
 print_message "Installing dependencies..."
